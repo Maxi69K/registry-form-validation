@@ -1,0 +1,81 @@
+/*   random images:      https://source.unsplash.com/random    */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --form-bg: #13232f;
+  --light-c: #fff;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5rem;
+  background-color: var(--light-c);
+  font-family: 'Roboto', sans-serif;
+  background: url(https://source.unsplash.com/lmFJOx7hPc4) center/cover no-repeat;
+  background-color: #333;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+form {
+  background-color: var(--form-bg);
+  max-width: 360px;
+  margin: auto;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 1px 0 19px 2px rgba(0, 0, 0, .5);
+}
+
+label {
+  color: #ddd;
+}
+
+input {
+  color: var(--light-c);
+}
+
+input::placeholder {
+  color: gray;
+}
+
+input.not-valid {
+  color: red !important;
+  border-bottom: 1px solid red !important;
+}
+
+#show-password {
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 0 5px 0 30px;
+  color: #26a69a;
+  text-decoration: line-through;
+}
+
+.errors-message {
+  max-width: 360px;
+  height: auto;
+  margin: 5px auto 0;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, .5);
+  color: red;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+/* @media all and (min-width: 576px) {} */
